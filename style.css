@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+  font-family: sans-serif;
+}
+.formulario {
+  width: 100%;
+  height: 100vh;
+}
+.Form-background {
+  width: 100%;
+  height: 100%;
+}
+.background {
+  width: 100%;
+  color: transparent;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/background.jpg);
+}
+.background.blue{
+  background-color: #0047ff;
+  background-blend-mode: screen;
+  background-size: contain;
+  background-repeat: round;
+}
+.background.green {
+  background-size: contain;
+  background-repeat: round;
+}
+.background.red{
+  background-color: #a70000;
+  background-blend-mode: luminosity;
+  background-size: contain;
+  background-repeat: round;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .contenedor {
+    background: #ffffff;
+    box-shadow: 0px 4px 31px rgb(0 0 0 / 44%);
+    position: absolute;
+    display: flex;
+    align-content: center;
+    width: 28em;
+    height: 45em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario-contacto {
+    width: 73%;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-form-name {
+    width: 23.5em;
+    border-radius: 5px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  .input-form-email {
+    width: 23.5em;
+    border-radius: 5px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  .input-form-phone {
+    width: 23.5em;
+    border-radius: 5px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  .textarea-form {
+    width: 23.5em;
+    border-radius: 6px;
+    padding: 5px 5px;
+    border: 2px solid #87BEFF;
+    height: 192px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    color: #000000;
+    margin: 56px 0 0px 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .contenedor {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 31px rgb(0 0 0 / 44%);
+    position: absolute;
+    display: flex;
+    align-content: center;
+    width: 40em;
+    height: 48em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario-contacto {
+    width: 66%;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-form-name {
+    width: 30.5em;
+    border-radius: 5px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  .input-form-email {
+    width: 30.5em;
+    border-radius: 5px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  .input-form-phone {
+    width: 30.5em;
+    border-radius: 5px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  .textarea-form {
+    width: 30.5em;
+    border-radius: 6px;
+    padding: 5px 5px;
+    border: 2px solid #87BEFF;
+    height: 192px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    color: #000000;
+    margin: 56px 0 19px 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contenedor {
+    background: #ffffff;
+    box-shadow: 0px 4px 31px rgb(0 0 0 / 44%);
+    position: absolute;
+    display: flex;
+    align-content: center;
+    width: 48em;
+    height: 47em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario-contacto {
+    width: 83%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 23px 10px;
+    align-items: center;
+    grid-template-areas:
+        "ho hw"
+        "hm hm"
+        "ht ht"
+        "hb hb";
+    justify-items: center;
+    align-content: center;
+  }
+  .input-form-name {
+    width: 22.5em;
+    border-radius: 6px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 38px;
+  }
+  .input-form-email {
+    width: 46.5em;
+    padding: 1px 5px;
+    border-radius: 6px;
+    border: 2px solid #87BEFF;
+    height: 38px;
+  }
+  .input-form-phone {
+    width: 22.5em;
+    border-radius: 6px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 38px;
+  }
+  .textarea-form {
+    width: 46.5em;
+    border-radius: 6px;
+    padding: 5px 5px;
+    border: 2px solid #87BEFF;
+    height: 192px;
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 30px;
+    color: #000000;
+    margin: 56px 0 49px 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contenedor {
+    background: #ffffff;
+    box-shadow: 0px 4px 31px rgb(0 0 0 / 44%);
+    position: absolute;
+    display: flex;
+    align-content: center;
+    width: 60em;
+    height: 50em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario-contacto {
+    width: 73%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px 10px;
+    align-items: center;
+    grid-template-areas:
+        "ho hw"
+        "hm hm"
+        "ht ht"
+        "hb hb";
+    justify-items: center;
+    align-content: center;
+  }
+  .input-form-name {
+    width: 24.5em;
+    border-radius: 6px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 40px;
+  }
+  .input-form-email {
+    width: 51.6em;
+    padding: 1px 5px;
+    border-radius: 6px;
+    border: 2px solid #87BEFF;
+    height: 40px;
+  }
+  .input-form-phone {
+    width: 24.5em;
+    border-radius: 6px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 40px;
+  }
+  .textarea-form {
+    width: 51.4em;
+    border-radius: 6px;
+    padding: 5px 5px;
+    border: 2px solid #87BEFF;
+    height: 192px;
+  }
+  h1 {
+    font-size: 30px;
+    color: #000000;
+    margin: 77px 0 49px 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contenedor {
+    background: #ffffff;
+    box-shadow: 0px 4px 31px rgb(0 0 0 / 44%);
+    position: absolute;
+    display: flex;
+    align-content: center;
+    width: 76em;
+    height: 50em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario-contacto {
+    width: 58%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px 10px;
+    align-items: center;
+    grid-template-areas:
+        "ho hw"
+        "hm hm"
+        "ht ht"
+        "hb hb";
+    justify-items: center;
+    align-content: center;
+  }
+  .input-form-name {
+    width: 24.5em;
+    border-radius: 6px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 40px;
+  }
+  .input-form-email {
+    width: 51.6em;
+    padding: 1px 5px;
+    border-radius: 6px;
+    border: 2px solid #87BEFF;
+    height: 40px;
+  }
+  .input-form-phone {
+    width: 24.5em;
+    border-radius: 6px;
+    padding: 1px 5px;
+    border: 2px solid #87BEFF;
+    height: 40px;
+  }
+  .textarea-form {
+    width: 51.4em;
+    border-radius: 6px;
+    padding: 5px 5px;
+    border: 2px solid #87BEFF;
+    height: 192px;
+  }
+  h1 {
+    font-size: 30px;
+    color: #000000;
+    margin: 82px 0 56px 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+.input-red {
+  border: 2px solid #ff0062;
+}
+.input-green {
+  border: 2px solid #77ff72;
+}
+.btns {
+  background: #88BFFF;
+  box-shadow: 0px 4px 31px rgb(0 117 255 / 44%);
+  padding: 19px 99px;
+  border: none;
+  border-radius: 33px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+label{
+  font-size: 11px;
+  color: transparent;
+}
+.white-label {
+  color: transparent;
+}
+.red-label {
+  color: red;
+}
+::placeholder {
+  color: rgb(194, 194, 194);
+  font-size: 1.1em;
+}
+.one {
+  grid-area: ho;
+}
+.two {
+  grid-area: hw;
+}
+.five {
+  grid-area: hb;
+}
+.input-email {
+  grid-area: hm;
+}
+.input-text {
+  grid-area: ht;
+} 

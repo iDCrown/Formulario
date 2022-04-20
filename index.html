@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="formulario">
+    <div class="background blue">
+    <div class="contenedor">
+      <h1>FORMULARIO</h1>
+      <form action="" class="formulario-contacto" method="post">
+        <ul id="errors"></ul>
+        <div class="input-field one">
+            <label id="label-name" class="label" for="Name">El campo no debe estar vacío y contener un espacio </label>
+            <input class="input-form-name" type="text" name="name_contact"  placeholder="Nombre y apellido" required>
+        </div>
+        <div class="input-field two">
+          <label id="label-phone" class="label" for="Name">Campo correo debe tener un correo válido</label>
+          <input class="input-form-phone" type="number" name="phone_contact"  placeholder="Ingresa tu teléfono" required>
+        </div>
+        <div class="input-email three">
+            <label id="label-email" class="label" for="Name">Campo número de teléfono debe tener entre 7 y 15 dígitos</label>
+            <input class="input-form-email" type="email" name="email_contact"  placeholder="Ingresa tu email" required>
+        </div>
+        <div class="input-text four">
+            <label id="label-text" class="label" for="Name">Campo comentario debe tener al menos 20 caracteres</label>
+            <textarea class="textarea-form" name="commit_contact" cols="30" rows="10" placeholder="Déjanos tus comentarios..." minlength="10" maxlength="200" required></textarea>
+        </div>
+        <button class="btns btn-enviar five" type="submit" value="submit" name="btn_enviar">ENVIAR</button>
+      </form>
+    </div>
+  </div>
+  </section>
+  <script src="./index.js"></script>
+
+</body>
+</html>
